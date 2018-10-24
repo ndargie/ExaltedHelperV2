@@ -1,11 +1,9 @@
-﻿using ExaltedHelper.DatabaseFactories.Contracts;
-using ExaltedHelper.Domain.Entities;
-using ExaltedHelper.Repositories.Repositories;
+﻿using ExaltedHelper.Domain.Entities;
 using NHibernate;
 
 namespace ExaltedHelper.Repository.Repositories
 {
-    public class ExaltedTypeRepository : RepositoryBase<ExaltedType, int>, IRepository<ExaltedType, int>
+    public class ExaltedTypeRepository : RepositoryBase<ExaltedType, int>
     {
         public ExaltedTypeRepository(ISession session) : base(session)
         {

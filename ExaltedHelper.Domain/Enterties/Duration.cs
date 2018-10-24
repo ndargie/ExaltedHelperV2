@@ -1,4 +1,6 @@
-﻿using ExaltedHelper.Domain.Base;
+﻿using System;
+using ExaltedHelper.Common.Constants;
+using ExaltedHelper.Domain.Base;
 
 namespace ExaltedHelper.Domain.Entities
 {

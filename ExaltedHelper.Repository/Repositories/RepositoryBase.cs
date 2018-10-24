@@ -7,7 +7,7 @@ using FluentValidation;
 using NHibernate;
 using NHibernate.Criterion;
 
-namespace ExaltedHelper.Repositories.Repositories
+namespace ExaltedHelper.Repository.Repositories
 {
     public abstract class RepositoryBase<T, TKey> : IRepository<T, TKey> where T : EntityBase<TKey>
     {

@@ -67,6 +67,7 @@ namespace ExaltedHelper.RestService
             kernel.Bind<ISeedManager>().To<SeedManager>().InRequestScope();
             kernel.Bind<IRepository<ExaltedType, int>>().To<ExaltedTypeRepository>().InRequestScope();
             kernel.Bind<IRepository<Caste, int>>().To<CasteRepository>().InRequestScope();
+            kernel.Bind<IRepository<Functionality, int>>().To<FunctionalityRepository>().InRequestScope();
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
             kernel.Bind<IDurationManager>().To<DurationManager>().InRequestScope();
         }

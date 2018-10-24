@@ -10,6 +10,7 @@ namespace ExaltedHelper.Repository.MappingOverrides
         {
             mapping.Map(x => x.Name).Length(30).Not.Nullable().Unique();
             mapping.Map(x => x.Description).Length(200).Not.Nullable();
+            mapping.Map(x => x.Status).Length(20).Not.Nullable();
         }
     }
 }

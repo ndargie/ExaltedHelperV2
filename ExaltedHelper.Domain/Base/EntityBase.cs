@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExaltedHelper.Common.Constants;
+using System;
 
 namespace ExaltedHelper.Domain.Base
 {
@@ -14,6 +15,22 @@ namespace ExaltedHelper.Domain.Base
 
         public virtual DateTime DateCreated { get; set; }
         public virtual DateTime DateModified { get; set; }
+        public virtual string Status { get; set; }
+
+        public void SetDeleted()
+        {
+            Status = StatusOptions.Deleted;
+        }
+
+        public void SetEnabled()
+        {
+            Status = StatusOptions.Enabled;
+        }
+
+        public void SetDisabled()
+        {
+            Status = StatusOptions.Disabled;
+        }
 
         public virtual bool Equals(EntityBase<TKey> other)
         {

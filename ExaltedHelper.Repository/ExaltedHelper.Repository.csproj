@@ -80,6 +80,7 @@
     <Compile Include="MappingOverrides\CraftTypeMappingOverride.cs" />
     <Compile Include="MappingOverrides\DurationMappingOverride.cs" />
     <Compile Include="MappingOverrides\ExaltedTypeMappingOverride.cs" />
+    <Compile Include="MappingOverrides\FunctionalityMappingOverride.cs" />
     <Compile Include="MappingOverrides\KeywordMappingOverride.cs" />
     <Compile Include="MappingOverrides\SkillMappingOverride.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Repositories\CraftTypeRepository.cs" />
     <Compile Include="Repositories\DurationRepository.cs" />
     <Compile Include="Repositories\ExaltedTypeRepository.cs" />
+    <Compile Include="Repositories\FunctionalityRepository.cs" />
     <Compile Include="Repositories\KeywordRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Repositories\SkillRepository.cs" />
@@ -106,6 +108,10 @@
     <Compile Include="Seed\Steps\SeedSkills.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ExaltedHelper.Common\ExaltedHelper.Common.csproj">
+      <Project>{E5C95B7D-0D58-47FC-A9B5-36D87D52D5A5}</Project>
+      <Name>ExaltedHelper.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ExaltedHelper.DatabaseFactories\ExaltedHelper.DatabaseFactories.csproj">
       <Project>{33CB93FB-A6D3-41FE-B403-17FBFCE79D7C}</Project>
       <Name>ExaltedHelper.DatabaseFactories</Name>

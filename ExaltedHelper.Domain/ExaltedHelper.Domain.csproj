@@ -47,9 +47,16 @@
     <Compile Include="Enterties\CraftType.cs" />
     <Compile Include="Enterties\Duration.cs" />
     <Compile Include="Enterties\ExaltedType.cs" />
+    <Compile Include="Enterties\Functionality.cs" />
     <Compile Include="Enterties\Keyword.cs" />
     <Compile Include="Enterties\Skill.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExaltedHelper.Common\ExaltedHelper.Common.csproj">
+      <Project>{E5C95B7D-0D58-47FC-A9B5-36D87D52D5A5}</Project>
+      <Name>ExaltedHelper.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
